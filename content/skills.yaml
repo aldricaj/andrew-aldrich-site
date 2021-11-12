@@ -1,0 +1,78 @@
+- skillset: 'Programming Languages'
+  skills:
+    - name: C#
+      color: '#E00122'
+      yearStarted: 2016
+    - name: Python
+      color: '#ffffff'
+      yearStarted: 2014
+    - name: JavaScript
+      yearStarted: 2016
+    - name: TypeScript
+      yearStarted: 2018
+    - name: CSS
+      yearStarted: 2016
+    - name: SASS
+      yearStarted: 2020
+    - name: HTML
+      yearStarted: 2016
+    - name: PowerShell
+- skillset: 'Web Development'
+  skills:
+    - name: Angular
+      yearStarted: 2018
+    - name: React
+      yearStarted: 2021
+    - name: jQuery
+      yearStarted: 2016
+    - name: 'Sitefinity CMS'
+      yearStarted: 2016
+    - name: 'ASP.NET Core'
+      yearStarted: 2019
+    - name: 'MSAL'
+      yearStarted: 2020
+- skillset: Databases
+  skills:
+    - name: MySQL
+    - name: PostgreSQL
+    - name: MongoDB
+    - name: 'Relational Database Design'
+- skillset: Testing
+  skills:
+    - name: MSTest
+    - name: 'Unit Testing'
+    - name: 'Integration Testing'
+    - name: 'Test Driven Development'
+    - name: 'Test plan creation'
+- skillset: 'DevOps and Developer Tools'
+  skills:
+    - name: 'Azure Devops'
+    - name: 'Jenkins'
+    - name: 'Continuous Integration and Delivery (CI/CD)'
+    - name: git
+    - name: GitHub
+    - name: 'Visual Studio'
+    - name: 'Visual Studio Code'
+    - name: 'Docker'
+- skillset: 'Cloud Platform and Technologies'
+  skills:
+    - name: 'Microsoft Azure'
+    - name: 'Azure Kubernetes Service (AKS)'
+    - name: 'Azure Container Service'
+    - name: 'Azure Functions'
+    - name: 'Azure Logic Apps'
+    - name: 'Azure Virtual Machines'
+- skillset: 'Operating Systems'
+  skills:
+    - name: 'Ubuntu (server and desktop)'
+    - name: 'Fedora Desktop'
+    - name: 'ArchLinux'
+    - name: 'Windows 10'
+    - name: 'Windows Server 2016'
+    - name: 'Windows Active Directory'
+- skillset: 'Non-Technical'
+  skills:
+    - name: Scrum
+    - name: Agile
+    - name: 'Technical Writing'
+    - name: 'Strategic and Innovative Thinking'

@@ -1,0 +1,6 @@
+.skillset-list-container {
+  display: block;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}

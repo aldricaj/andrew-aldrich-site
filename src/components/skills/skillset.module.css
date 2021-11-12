@@ -1,11 +1,13 @@
 .skillset-container {
   display: block;
-  padding: 3vh 2vw;
+  padding: 2rem 0 0 0;
 }
 
 .skill-list-item {
   list-style-type: none;
-  padding: 1vh 4vw;
+  padding: 1vh 1vw;
+  min-width: 4vw;
+  text-align: center;
   border: solid #555;
   border-radius: 100px;
 }
@@ -15,6 +17,6 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px 30px;
+  gap: 2vh 1vw;
   padding-top: 1vh;
 }

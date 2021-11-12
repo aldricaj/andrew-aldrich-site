@@ -7,13 +7,18 @@ const Skill = (skill) => {
 };
 
 const SkillSet = ({ skillset }) => {
-  const skillComponents = skillset.skills.map((skill) => {
-    return (
-      <li className={styles.skillListItem} id={skill.name}>
-        <Skill skill={skill} />
-      </li>
-    );
-  });
+  const skillComponents = skillset.skills
+    .sort((a, b) => {
+      console.log(a);
+      return a.name.localeCompare(b.name);
+    })
+    .map((skill) => {
+      return (
+        <li className={styles.skillListItem} id={skill.name}>
+          <Skill skill={skill} />
+        </li>
+      );
+    });
   return (
     <div className={styles.skillsetContainer}>
       <h3>{skillset.skillset}</h3>

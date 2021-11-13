@@ -32,6 +32,7 @@ Start the server
 
 ## Todo
 
+- Add projects section
 - Mobile Support
 - Cool graph view for skills
 - Make skills section and projects section linked. This will require a db, probably.

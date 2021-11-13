@@ -4,22 +4,21 @@ import CareerEventList from '../components/careerEventList';
 
 import Layout from '../components/layout';
 
-const ExperiencePage = ({ data }) => {
-  console.log(data);
-  const jobsList = data.jobMDFiles.jobs;
+const EducationPage = ({ data }) => {
+  const educationList = data.educationMDFiles.events;
 
   return (
     <Layout pageTitle="About Me">
-      <h2>Experience</h2>
-      <CareerEventList careerEventList={jobsList} />
+      <h2>Education</h2>
+      <CareerEventList careerEventList={educationList} />
     </Layout>
   );
 };
 
 export const query = graphql`
-  query JobsQuery {
-    jobMDFiles: allMdx(filter: { slug: { regex: "/jobs/.*/" } }) {
-      jobs: nodes {
+  query EducationQuery {
+    educationMDFiles: allMdx(filter: { slug: { regex: "/education/.*/" } }) {
+      events: nodes {
         slug
         frontmatter {
           organization
@@ -35,4 +34,4 @@ export const query = graphql`
   }
 `;
 
-export default ExperiencePage;
+export default EducationPage;

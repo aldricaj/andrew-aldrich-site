@@ -3,15 +3,18 @@ import * as React from 'react';
 import * as styles from './careerEventList.module.css';
 
 const CareerEvent = ({ event }) => {
+  const dateSection = event.frontmatter.hideDates ? null : (
+    <p>
+      {event.frontmatter.startDate} - {event.frontmatter.endDate}
+    </p>
+  );
   return (
     <div className={styles.careerEvtListItem}>
       <div>
         <h3>
           {event.frontmatter.organization} - {event.frontmatter.title}
         </h3>
-        <p>
-          {event.frontmatter.startDate} - {event.frontmatter.endDate}
-        </p>
+        {dateSection}
       </div>
       <div className={styles.careerEvtDescriptionContainer}>
         <MDXRenderer>{event.body}</MDXRenderer>
@@ -19,15 +22,15 @@ const CareerEvent = ({ event }) => {
     </div>
   );
 };
-const CareerEventList = ({ eventList }) => {
-  const eventCompnonents = eventList
+const CareerEventList = ({ careerEventList }) => {
+  const eventCompnonents = careerEventList
     .sort((a, b) => {
       const aDate = getDateFromEvent(a.frontmatter.startDate);
       const bDate = getDateFromEvent(b.frontmatter.startDate);
 
       if (aDate < bDate) return -1;
-      if (aDate == bDate) return 0;
       if (aDate > bDate) return 1;
+      return 0;
     })
     .map((event, index) => {
       return <CareerEvent event={event} />;

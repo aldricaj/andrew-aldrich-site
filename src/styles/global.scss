@@ -10,7 +10,8 @@ ul > li {
   list-style-type: '-';
 }
 
-p {
+p,
+li {
   font-size: 1.4rem;
   color: variables.$text-color;
   font-family: variables.$paragraph-font;

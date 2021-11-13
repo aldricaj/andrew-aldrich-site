@@ -33,5 +33,6 @@ Start the server
 ## Todo
 
 - Mobile Support
-
 - Cool graph view for skills
+- Make skills section and projects section linked. This will require a db, probably.
+- Cleanup Skills components

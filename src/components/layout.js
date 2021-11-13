@@ -6,6 +6,7 @@ import '@fontsource/oswald';
 import * as styles from './layout.module.css';
 import '../styles/global.scss';
 import { StaticImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 
 const Layout = ({ pageTitle, children }) => {
   return (
@@ -25,6 +26,13 @@ const Layout = ({ pageTitle, children }) => {
             />
           </div>
         </div>
+        <nav>
+          <Link to="/">About Me</Link>
+          <Link to="/skills">Skills</Link>
+          <Link to="/experience">Experience</Link>
+          <Link to="/education">Education and Certifications</Link>
+          <a href="andrew-aldrich-resume.pdf">Resume</a>
+        </nav>
         {children}
       </main>
     </div>

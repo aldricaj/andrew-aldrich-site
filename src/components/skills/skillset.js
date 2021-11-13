@@ -3,7 +3,11 @@ import * as styles from './skillset.module.css';
 const Skill = (skill) => {
   // Making into a component since I am planning on adding more information to this
   console.log(skill.skill);
-  return <p>{skill.skill.name}</p>;
+  return (
+    <li className={styles.skillListItem} id={skill.name}>
+      {skill.skill.name}
+    </li>
+  );
 };
 
 const SkillSet = ({ skillset }) => {
@@ -13,11 +17,7 @@ const SkillSet = ({ skillset }) => {
       return a.name.localeCompare(b.name);
     })
     .map((skill) => {
-      return (
-        <li className={styles.skillListItem} id={skill.name}>
-          <Skill skill={skill} />
-        </li>
-      );
+      return <Skill skill={skill} />;
     });
   return (
     <div className={styles.skillsetContainer}>

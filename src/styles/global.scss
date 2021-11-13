@@ -3,18 +3,33 @@
   font-size: 16px;
   margin: 0;
   padding: 0;
-
   font-family: variables.$paragraph-font;
 }
+
 ul > li {
   list-style-type: '-';
 }
 
+a,
 p,
 li {
   font-size: 1.4rem;
   color: variables.$text-color;
   font-family: variables.$paragraph-font;
+}
+p {
+  padding-bottom: 2vh;
+}
+a:hover {
+  color: variables.$accent-text-color;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 0 3vw;
+  padding-bottom: 5vh;
 }
 
 h1 {
@@ -48,4 +63,8 @@ h5 {
 
 .subtitle {
   color: variables.$text-color;
+}
+
+main {
+  padding: 10vh 0 10vh 0;
 }
